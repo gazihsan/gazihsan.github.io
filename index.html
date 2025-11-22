@@ -38,29 +38,25 @@
         font-size: 28px;
         font-weight: 600;
     }
-    header img {
-        height: 55px; /* Logonun yüksekliğini ayarlayabilirsiniz */
+    /* Logo linki için stil */
+    header a img {
+        height: 55px; /* Logonun yüksekliğini ayarlar */
+        border: none;
+        text-decoration: none;
     }
     .profile-img {
         width: 130px;
         height: 130px;
         border-radius: 50%;
-        object-fit: cover; /* Resmin daire içinde düzgün görünmesini sağlar */
+        object-fit: cover;
         border: 4px solid rgba(255,255,255,0.6);
         margin-top: -70px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
-    .card {
-        margin-top: 80px;
-        padding: 30px 40px 40px;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 18px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-        backdrop-filter: blur(10px);
-        text-align: center;
-        width: 350px;
-        animation: fadeIn 1.3s ease;
-        position: relative;
+    /* Profil resmi linki için ek stil */
+    .card a {
+        text-decoration: none; /* Linkten gelen alt çizgiyi kaldırır */
+        display: block; /* Resmi linkin içine sığdırmak için */
     }
     .card h2 {
         margin-top: 20px;
@@ -119,12 +115,16 @@
 
 <header>
     <h1>İhsan Menderes Ok</h1>
-    <img src="images/gazi_uni_logo.png" alt="Gazi Üniversitesi Logosu" />
+    <a href="https://hizliresim.com/hi1wbnh" target="_blank">
+        <img src="images/gazi_uni_logo.png" alt="Gazi Üniversitesi Logosu" />
+    </a>
 </header>
 
 <div class="card">
 
-    <img class="profile-img" src="images/profile.png" alt="Profil Fotoğrafı" />
+    <a href="https://hizliresim.com/m5uqo8n" target="_blank">
+        <img class="profile-img" src="images/profile.png" alt="Profil Fotoğrafı" />
+    </a>
 
     <h2>İhsan Menderes Ok?</h2>
     <p>Bu Web Site Açık Kaynak Yazılım Geliştirme Dersi için açılmıştır.</p>
