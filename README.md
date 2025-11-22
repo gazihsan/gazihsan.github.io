@@ -1,2 +1,2 @@
 # gazihsan.github.io
-gazihsan
+Açık Kaynak Yazılım Geliştirme Dersi için örnek  depo
