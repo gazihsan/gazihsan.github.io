@@ -26,12 +26,16 @@
     header {
         width: 100%;
         display: flex;
-        justify-content: center; /* Fotoğraf olmayınca içeriği ortaladık */
+        justify-content: center;
         align-items: center;
         padding: 15px 30px;
         background: rgba(0,0,0,0.25);
         backdrop-filter: blur(10px);
         box-sizing: border-box;
+    }
+    header img {
+        height: 60px;
+        margin-right: 15px;
     }
     header h1 {
         margin: 0;
@@ -52,7 +56,6 @@
         position: relative;
     }
     .card h2 {
-        /* Fotoğraf boşluğunu telafi etmek için üst marjı azalttık */
         margin-top: 0px; 
         font-size: 26px;
     }
@@ -108,18 +111,19 @@
 <body>
 
 <header>
+    <img src="https://upload.wikimedia.org/wikipedia/tr/thumb/7/7a/Gazi_%C3%9Cniversitesi_logosu.png/600px-Gazi_%C3%9Cniversitesi_logosu.png" 
+         alt="Gazi Üniversitesi Logosu">
     <h1>İhsan Menderes Ok</h1>
-    </header>
+</header>
 
 <div class="card">
-
     <h2>İhsan Menderes Ok</h2>
     <p>Bu Web Site Açık Kaynak Yazılım Geliştirme Dersi için açılmıştır.</p>
 
     <div class="contact">
         <h3>İletişim</h3>
-        <a href="https://instagram.com/@x_ihsanmenderesok" target="_blank">📸 Instagram</a>
-        <a href="mailto:ihsanmenderesok@gmil.com">📧 Gmail</a>
+        <a href="https://instagram.com/x_ihsanmenderesok" target="_blank">📸 Instagram</a>
+        <a href="mailto:ihsanmenderesok@gmail.com">📧 Gmail</a>
     </div>
 </div>
 
